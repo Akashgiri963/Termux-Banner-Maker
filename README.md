@@ -2,7 +2,7 @@
 
 -> It's help to create your name/company name as a logo on termux screen
 
-Coded by -> @akashgiri963 (https://github.com/akashgiri963/termux-baner-maker)
+Coded by -> @akashgiri963 (https://github.com/Akashgiri963/Termux-Banner-Maker)
 
 
 * Give me the credits if you copy ANY part from this code. Don't be NOOB!!
