@@ -10,7 +10,7 @@ gem install lolcat
 git clone https://github.com/xero/figlet-fonts
 cd /data/data/com.termux/files/usr/share
 mv figlet-fonts/* figlet && rm -rf figlet-fonts
-chmod +x Termux-Banner-Maker.sh
+chmod +x Termux-Baner-Maker.sh
 figlet -f big Enjoy | lolcat
 echo
 echo
