@@ -1,13 +1,14 @@
 #! /bin/bash
 
 echo ""
-echo "                 ______________________________________         "|lolc>
-echo "        ________|                                      |_______ "|lolc>
-echo "        \       |  WELCOME TO THE TERMUX BANER MAKER   |      / "|lolc>
-echo "         \      |                                      |     /  "|lolc>
-echo "         /      |______________________________________|     \  "|lolc>
-echo "        /__________)                                (_________\ "|lolc>
+echo "                 ______________________________________         "|lolcat
+echo "        ________|                                      |_______ "|lolcat
+echo "        \       |  WELCOME TO THE TERMUX BANER MAKER   |      / "|lolcat
+echo "         \      |                                      |     /  "|lolcat
+echo "         /      |______________________________________|     \  "|lolcat
+echo "        /__________)                                (_________\ "|lolcat
 echo ""
+echo -e "\e[36m                                 Code By -> Akash Giri"
 
 figlet -f big Termux Banner| lolcat
 
