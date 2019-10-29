@@ -12,3 +12,14 @@ Coded by -> @akashgiri963 (https://github.com/Akashgiri963/Termux-Banner-Maker)
 
 
 * Credits (Copyright) Don't copy this code without giving the credits!!!
+
+------------------------------------------------------------------------
+
+Commands ->
+
+git clone https://github.com/Akashgiri963/Termux-Banner-Maker
+cd Termux-Banner-Maker
+chmod +x install.sh
+./install.sh
+
+./Termux-Baner-Maker.sh
