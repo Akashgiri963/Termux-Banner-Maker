@@ -1,10 +1,14 @@
-#!/bin/bash
-
-echo -e "\n\n\nSorry! This script is not completed yet..."
+#! /bin/bash
 
 echo -e "\n\n\nWelcome to the Termux-Baner-Maker Window"
-
-echo -e "\n\n\nEnter the text for LOGO : \c" 
+echo "                          Code By : Akash Giri   "
+echo -e "\n\n\nEnter the text for LOGO : \c"
 read text
 
-echo -e "n\n\nYou have entered $text"
+cd /data/data/com.termux/files/usr/etc
+
+echo "clear" > clear.txt
+echo "figlet -f slant "$text"|lolcat" > temp.txt
+
+cat clear.txt >> bash.bashrc
+cat temp.txt >> bash.bashrc
