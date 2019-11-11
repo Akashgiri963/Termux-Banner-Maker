@@ -12,18 +12,24 @@ echo -e "\e[36m                                 Code By -> Akash Giri"
 
 figlet -f big Termux Banner| lolcat
 
+function create(){
+
 echo -e "\n\n\n\e[33mEnter The Text For LOGO : \e[32m\c"
 read name
 
 echo -e "\n\n\e[1m\e[33m\nWhat is Your Nick-Name : \e[32m\c"
 read nickname
 
-echo -e "\n\n\n\e[33mChoose the cowsay file : \e[32m\n"
-echo -e "\e[33m1.Daemon         6.Kiss"
-echo -e "2.Dragon               7.Milk"
-echo -e "3.Dragen-and-cow       8.Stegosaurus"
-echo -e "4.Eyes                 9.Turkey"
-echo -e "5.Head-In              10.Turtle"
+echo -e "\n\n\n\e[33mChoose the cowsay file -
++-----------------------------------------------------------------------+
+        1.Daemon                6.Kiss
+        2.Dragon                7.Milk
+        3.Dragen-and-cow        8.Stegosaurus
+        4.Eyes                  9.Turkey
+        5.Head-In               10.Turtle
++-----------------------------------------------------------------------+
+\033[0m";
+
 echo -e "\n\e[33mEnter you choice number : \e[32m\c"
 read choice
 echo -e "\nYou entered $choice\e[0m"
@@ -61,10 +67,8 @@ case $choice in
         10)echo "turtle selected"
           echo "cowsay -f turtle "$nickname"|lolcat" > nickname.txt
         ;;
-        *)echo -e "\nPlease choose number between 1 to 10";
+        *)echo -e "\nPlease choose number between 1 to 10";;
 esac
-
-cd /data/data/com.termux/files/usr/etc
 
 echo "clear" > clear.txt
 echo "figlet -f slant "$name"|lolcat" > temp.txt
@@ -78,4 +82,39 @@ echo ""
 
 figlet -f slant "$text"|lolcat
 cowsay -f eyes "$nickname"|lolcat
-figlet -f small "Thank You"|lolcat
+
+}
+
+function remove(){
+
+cd /data/data/com.termux/files/usr/etc
+
+truncate -s $(head -n -3 bash.bashrc | wc -c) bash.bashrc
+
+echo -e "\n\n\e[33mYour last banner deleted successfully... \e[0m"
+echo ""
+}
+
+echo -e "\n\n\n\e[33mWhat do you want to perform :-
++-----------------------------------------------------------------------+
+        1.Create Banner
+        2.Remove Banner
+        3.Exit
++-----------------------------------------------------------------------+
+\033[0m";
+
+echo -e "\nEnter choice number : \e[32m\c"
+read opt
+
+echo -e "\nProcessing...\e[0m"
+
+case $opt in
+        1)create;;
+        2)remove;;
+        3)echo -e "\n\e[0mThank you for Using\e[0m\n"
+          exit
+        ;;
+        *)echo -e "\nInvalid Option";;
+esac
+
+figlet -f small "Thank You"|lolcat;
