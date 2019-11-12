@@ -23,6 +23,7 @@ echo -e "\n\e[33mSuccessfully Installed\n"
 chmod +x Termux-Baner-Maker.sh
 figlet -f big Enjoy | lolcat
 
-echo 'alias tbm="cd /data/data/com.termux/files/home/Termux-Banner-Maker;b>
+echo 'alias tbm="cd /data/data/com.termux/files/home/Termux-Banner-Maker;bash Termux-Baner-Maker.sh"' > al.txt
 cat al.txt >> /data/data/com.termux/files/usr/etc/bash.bashrc
+rm al.txt
 echo -e "\n\e[36mType tbm anywhere in termux to run Termux-Banner-Maker\n\e[0m"
