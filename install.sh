@@ -20,10 +20,10 @@ git clone https://github.com/xero/figlet-fonts
 cp figlet-fonts/* /data/data/com.termux/files/usr/share/figlet
 rm -rf figlet-fonts
 echo -e "\n\e[33mSuccessfully Installed\n"
-chmod +x Termux-Baner-Maker.sh
+chmod +x Termux-Banner-Maker.sh
 figlet -f big Enjoy | lolcat
 
-echo 'alias tbm="cd /data/data/com.termux/files/home/Termux-Banner-Maker;bash Termux-Baner-Maker.sh"' > al.txt
+echo 'alias tbm="cd /data/data/com.termux/files/home/Termux-Banner-Maker;bash Termux-Banner-Maker.sh"' > al.txt
 cat al.txt >> /data/data/com.termux/files/usr/etc/bash.bashrc
 rm al.txt
-echo -e "\n\e[36mType tbm anywhere in termux to run Termux-Banner-Maker\n\e[0m"
+echo -e "\n\e[1;36mType tbm anywhere in termux to run Termux-Banner-Maker\n\e[0m"
