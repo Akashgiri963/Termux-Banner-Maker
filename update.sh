@@ -9,7 +9,7 @@ rm -rf /data/data/com.termux/files/usr/share/Termux-Banner-Maker/*
 echo -e "$red [$green+$red]$green Installing ...\n";
 git clone https://github.com/Akashgiri963/Termux-Banner-Maker.git "/data/data/com.termux/files/usr/share/Termux-Banner-Maker";
 
-if [ -d "/data/data/com.termux/files/usr/share/Termux-Banner-Maker" ] ;
+if [ -e "/data/data/com.termux/files/usr/share/Termux-Banner-MakerTermux-Banner-Maker.sh" ] ;
 then
 chmod +x /data/data/com.termux/files/usr/share/Termux-Banner-Maker/install.sh
 chmod +x /data/data/com.termux/files/usr/share/Termux-Banner-Maker/update.sh
